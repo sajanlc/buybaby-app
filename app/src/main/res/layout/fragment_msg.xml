@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.home.MsgFragment"
+    android:padding="5dp"
+    android:orientation="vertical"
+
+    >
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtPhoneNumberLayout"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:padding="5dp"
+        android:textColorHint="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_marginHorizontal="3dp"
+        android:textSize="11sp"
+        android:text="Enter number with full country code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtMsgLayout"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="match_parent"
+
+        android:hint="Message"
+        android:padding="5dp"
+        android:layout_height="200dp"
+        android:textColorHint="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtMsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="top"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSendSms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+/>
+
+
+    <TextView
+        android:layout_marginHorizontal="3dp"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Detail"
+        />
+    <TextView
+        android:id="@+id/txtMsgItemName"
+        android:layout_marginHorizontal="3dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Name:"
+        />
+    <TextView
+        android:layout_marginHorizontal="3dp"
+        android:text="Price: "
+        android:textSize="20sp"
+        android:id="@+id/txtMsgItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginHorizontal="3dp"
+        android:text="Qty: "
+        android:textSize="20sp"
+        android:id="@+id/txtMsgItemQty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:layout_marginHorizontal="3dp"
+        android:text="Location: "
+        android:textSize="20sp"
+        android:id="@+id/txtMsgItemLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_marginHorizontal="3dp"
+        android:text="Description: "
+        android:textSize="20sp"
+        android:id="@+id/txtMsgDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

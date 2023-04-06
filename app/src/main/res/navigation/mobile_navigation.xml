@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.babybuy.activities.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_item"
+        android:name="com.example.babybuy.activities.ui.item.ItemFragment"
+        android:label="Items"
+        tools:layout="@layout/fragment_item" />
+
+    <fragment
+        android:id="@+id/nav_sendSms"
+        android:name="com.example.babybuy.activities.ui.home.MsgFragment"
+        android:label="Send Sms"
+        tools:layout="@layout/fragment_msg" />
+
+    <fragment
+        android:id="@+id/nav_editItem"
+        android:name="com.example.babybuy.activities.ui.home.EditItemFragment"
+        android:label="Update item"
+        tools:layout="@layout/fragment_edit_item" />
+
+    <fragment
+        android:id="@+id/nav_locationPicker"
+        android:name="com.example.babybuy.activities.ui.item.LocationPickerFragment"
+        android:label="Pick location"
+        tools:layout="@layout/fragment_location_picker" />
+
+
+    <fragment
+        android:id="@+id/nav_addItem"
+        android:name="com.example.babybuy.activities.ui.item.AddItemFragment"
+        android:label="Add Item"
+        tools:layout="@layout/fragment_add_item" >
+        <argument
+            android:name="AddItemArgument"
+            app:argType="string" />
+    </fragment>
+</navigation>
